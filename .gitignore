@@ -1,3 +1,7 @@
+# sublime project
+drupal-test.sublime-project
+drupal-test.sublime-workspace
+
 # Ignore configuration files that may contain sensitive information.
 # sites/*/*settings*.php
 
