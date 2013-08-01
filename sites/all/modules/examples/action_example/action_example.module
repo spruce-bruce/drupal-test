@@ -161,6 +161,12 @@ function action_example_action_info() {
       'behavior' => array('changes_property'),
       'triggers' => array('node_presave', 'node_insert', 'node_update'),
     ),
+    'action_example_butte_action' => array(
+      'label' => t("Butte butte butte"),
+      'type' => 'system',
+      'configurable' => FALSE,
+      'triggers' => array('triggersomething')
+    )
   );
 }
 
@@ -211,6 +217,10 @@ function action_example_basic_action(&$entity, $context = array()) {
 
   drupal_set_message(t('action_example_basic_action fired'));
   watchdog('action_example', 'action_example_basic_action fired.');
+}
+
+function action_example_butte_action(&$entity, $context = array()){
+  drupal_set_message(t('this is my own action!'));
 }
 
 /**
